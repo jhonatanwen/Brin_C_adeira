@@ -4,5 +4,5 @@ Esse repositório é feito para guardar coisas que meu grupo de amigos fizeram e
 
 ## Regras
 
-Quando tentar quiser adicionar algo faz um pull request com explicação do código na descrição dele.<br>
+Quando quiser adicionar algo faz um pull request com explicação do código na descrição dele.<br>
 **Lembrem de assinar o PR!!!**
