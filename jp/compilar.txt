@@ -1,0 +1,26 @@
+COMO FAZER A MELHOR COMPILAÇÃO DO MUNDO
+####Sempre importante lembrar que para compilar em Windows precisamos do MinGW(só procurar no google mingwdownload)####
+
+-----------Para compilar um programa em C, siga estes passos:------------
+    1.Escreva o código em um editor de texto (por exemplo, Notepad++, Visual Studio Code, etc.) e salve-o com uma extensão .c. Suponha que o nome do arquivo seja "programa.c".
+
+    2.Abra o prompt de comando (no Windows) ou terminal (no Linux/Mac).
+
+    3.Navegue até o diretório onde o arquivo "programa.c" está salvo usando o comando "cd" (por exemplo, cd Desktop/codigos).
+
+    4.Compile o programa usando o compilador C. No Windows, o compilador padrão é o "gcc". No Linux/Mac, geralmente já vem instalado o GCC (GNU Compiler Collection), que inclui o compilador C. Use o seguinte comando para compilar o programa:
+
+        gcc programa.c -o programa
+
+    Explicação:
+
+    gcc: o nome do compilador
+    programa.c: o nome do arquivo que contém o código-fonte
+    -o programa: opção que indica o nome do arquivo de saída. Neste caso, o arquivo será chamado "programa".
+    Execute o programa compilado digitando "./programa" no prompt de comando ou terminal.
+
+Observação: caso o seu programa dependa de alguma biblioteca externa, você precisará adicionar o parâmetro -l nome_da_biblioteca ao comando de compilação. Por exemplo:
+
+gcc programa.c -o programa -lm
+
+Nesse caso, a biblioteca "math.h" está sendo usada e foi adicionada com a opção -lm.
