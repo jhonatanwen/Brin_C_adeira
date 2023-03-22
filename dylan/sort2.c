@@ -3,22 +3,20 @@
 #include <time.h>
 #define SIZE 10
 
-int sort(int array[], int size){
+int ref_sort(int array[], int size){
     auto int i,j,dummy;
-    
-    srand(time(NULL));
 
     puts("Array organizado: ");
     /*Organizando o array*/
-    for (j = 1; j < size; j++)
+    for (j = 0; j < size-1; j++)
     {
-        for (i = 0; i < size - 1; i++)
+        for (i = j+1; i < size ; i++)
         {
-            if (array[i] > array[i + 1])
+            if (array[i] < array[j])
             {
                 dummy = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = dummy;
+                array[i] = array[j];
+                array[j] = dummy;
             }
         }
     }
@@ -34,7 +32,7 @@ int main(){
         scanf("%d",&array[i]);
     }
 
-    sort(array,SIZE);
+    ref_sort(array,SIZE);
 
     for(i=0 ; i <SIZE ; i++){
         printf("%4d",array[i]);
